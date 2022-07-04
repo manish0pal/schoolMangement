@@ -45,3 +45,13 @@ const addStudentDetail = ()=>{
 
 
 }
+
+var stdDetail=[
+    {
+        name:"neeraj kumar",
+        regno:0001,
+        rollno:001,
+        standard:"9th",
+        
+    }
+]
