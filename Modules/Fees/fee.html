@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubro Fee Module</title>
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../dist/js/jquery.slim.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="root d-flex">
+        <div class="sidemenu ">
+
+
+            <div class="logo mt-2 mb-2">
+                <img class="img-fluid" src="../../logocrop.png" width="60" />
+            </div>
+            <div class="menu_item  mt-2 mb-2">
+                <i class="fa fa-money "></i>
+            </div>
+
+            <div class="menu_item last_menu   mb-2">
+                <i class="fa fa-sign-out"></i>
+            </div>
+
+
+
+        </div>
+        <div class="main">
+            <div class="row h-100">
+                <div class="col-lg-4 col-12 h-100 scrollVertical">
+
+                    <img  src="https://cdn.dribbble.com/users/1030568/screenshots/14199624/media/0374738d3e847beea2b026cbadfccd6f.png"
+                        width="100" class="img-fluid rounded" alt="school logo" />
+                    <h4 class="title mt-2">School Name</h4>
+                    <span class="dis">Description given by school</span>
+
+
+                    <div class="card shadow  m-4 p-4" id="studentDetails">
+                        <span class="mt-2">Enter Registration No.</span>
+                        <div class="form_group borderBlue">
+                            <input type="text" class="form_input regNO" id="name" placeholder="Registraion Number" required="" />
+                            
+                          </div>
+                          <!-- end -->
+
+                          <button class="col-lg-4 col-8 btn btn-success btn-sm mt-4 regBtn" onclick="addStudentDetail()">Submit</button>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-12">ok</div>
+                <div class="col-lg-4 col-12">ok</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./fee.js"></script>
+
+</html>
