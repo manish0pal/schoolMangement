@@ -38,25 +38,50 @@
             <div class="row h-100">
                 <div class="col-lg-4 col-12 h-100 scrollVertical">
 
-                    <img  src="https://cdn.dribbble.com/users/1030568/screenshots/14199624/media/0374738d3e847beea2b026cbadfccd6f.png"
+                    <img src="https://cdn.dribbble.com/users/1030568/screenshots/14199624/media/0374738d3e847beea2b026cbadfccd6f.png"
                         width="100" class="img-fluid rounded" alt="school logo" />
                     <h4 class="title mt-2">School Name</h4>
                     <span class="dis">Description given by school</span>
 
-
                     <div class="card shadow  m-4 p-4" id="studentDetails">
                         <span class="mt-2">Enter Registration No.</span>
                         <div class="form_group borderBlue">
-                            <input type="text" class="form_input regNO" id="name" placeholder="Registraion Number" required="" />
-                            
-                          </div>
-                          <!-- end -->
+                            <input type="text" class="form_input regNO" id="name" placeholder="Registraion Number"
+                                required="" />
 
-                          <button class="col-lg-4 col-8 btn btn-success btn-sm mt-4 regBtn" onclick="addStudentDetail()">Submit</button>
+                        </div>
+                        <!-- end -->
+
+                        <button class="col-lg-4 col-8 btn btn-success btn-sm mt-4 regBtn"
+                            onclick="addStudentDetail()">Submit</button>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card shadow m-4 p-4">
+
+                            <div class="card-body">
+
+                                <div class="card-title studentCard">
+                                    <div class="stdimage"><img src="../../icon/graduated.png" alt="student image" class="student-image" id="stdimage"></div>
+                                    <h6 class="mt-2" id="stdname">Student Name</h6>
+                                    <h6 id="stdregno">Registraion Number</h6>
+                                </div>
+
+                                <p class="card-text">
+
+                                </p>
+                                <h6><img src="../../icon/graduated.png" alt=" rollno" class="img-icon"> Roll No. :- <span class="stddata" id="stdrollno"></span></h6>
+                                <h6><img src="../../icon/google-classroom.png" alt=" standard" class="img-icon"> Standard :- <span id="stdstandard" class="stddata"></span></h6>
+                                <h6><img src="../../icon/dad.png" alt="father" class="img-icon"> Father Name :- <span id="stdfather" class="stddata"></span> </h6>
+                                <h6><img src="../../icon/telephone.png" alt="contact" class="img-icon"> contact :- <span id="stdcontact" class="stddata"></span></h6>
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-12">ok</div>
+                <div class="col-lg-4 col-12">
+                </div>
                 <div class="col-lg-4 col-12">ok</div>
             </div>
         </div>

@@ -17,6 +17,9 @@
 
     
 }
+.bg-theme{
+    background: var(--theme);
+}
 .my_center_box{
       align-items: center;
       justify-content: center;
@@ -91,3 +94,30 @@ font-size: 12px;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+  .img-icon{
+    height: 20px;
+    width: 20px;
+  }
+
+.student-image{
+    width: 100px;
+    height:100px;
+    
+}
+.stdimage{
+    border-radius: 70px;
+    background-color: #5840ba;
+    width: fit-content;
+}
+.card-container
+{    padding-top: 4rem;}
+
+.studentCard{
+    margin-top: -7rem;
+    text-align: center;
+}
+.stddata
+{
+    padding-left: 0.5rem;
+    font-weight: bold;
+}
