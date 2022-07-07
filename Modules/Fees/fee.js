@@ -1,5 +1,5 @@
 
-const studentDetailCard = $('#studentDetails');
+
 const studentDetail =[
 
     {
@@ -30,17 +30,21 @@ const studentDetail =[
  
 
 const addStudentDetail = ()=>{
-    studentDetailCard.empty();
+    // studentDetailCard.empty();
 
-    studentDetail.map((val,ind)=>{
-        let deatilRow = `   <span class="mt-2">${val.title}</span>
-        <div class="form_group borderBlue">
-            <input class="form_input regNO" readonly  value="${val.value}" />
-          </div>`;
-        deatilRowElement = $.parseHTML( deatilRow );
-        studentDetailCard.append(deatilRowElement);
-    });
+    // studentDetail.map((val,ind)=>{
+    //     let deatilRow = `   <span class="mt-2">${val.title}</span>
+    //     <div class="form_group borderBlue">
+    //         <input class="form_input regNO" readonly  value="${val.value}" />
+    //       </div>`;
+    //     deatilRowElement = $.parseHTML( deatilRow );
+    //     studentDetailCard.append(deatilRowElement);
+    // });
 
+    //get data first then 
+    $('#studentFind').hide();
+    
+    $('#studentDetails').show();
 
 
 
