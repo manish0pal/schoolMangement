@@ -1,5 +1,6 @@
 :root {
-    --theme: #5840ba;
+    --theme: #1183e1;
+    --theme1: #5840ba;
 }
 
 *{
@@ -77,7 +78,7 @@ font-size: 12px;
     border-radius: 16px;
 }
 .borderBlue{
-    border: 1px solid #5840ba;
+    border: 1px solid var(--theme);
 }
 .scrollVertical{
     overflow-y: auto;
