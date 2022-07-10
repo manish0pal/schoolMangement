@@ -35,51 +35,53 @@
 
         </div>
         <div class="main">
+            <div class="row ">
+                <div class="logo-container">
+                <div class=" my_center_box">
+                    <img src="https://cdn2.vectorstock.com/i/1000x1000/06/96/logo-school-vector-19170696.jpg"
+                        width="100" class="img-fluid rounded" alt="school logo" />
+                </div>
+                <div class="col-lg-8 col-12 my_center_box" style="align-items: normal;">
+                    <h4 class="title mt-2">School Name</h4>
+                    <span class="dis">Description given by school or slogan of school</span>
+                </div>
+                </div>
+            </div>
             <div class="row h-100">
                 <div class="col-lg-4 col-12 h-100 scrollVertical ">
-<div class="row">
+                    <div class="card-container1 hide" id="studentDetails">
+                        <div class="uper-container">
+                            <div class="image-container">
+                                <img src="../../icon/graduated.png" alt="student image" class="stdimg">
+                            </div>
+                        </div>
+                        <div class="lower-container">
+                            <div class="stdnameregno">
+                                <h6 class="stdname" id="stdname">Student Name</h6>
+                                <h6 class="stdname" id="stdregno">78455</h6>
+                            </div>
+                            <div class="cardbody">
+                                <div class="row">
+                                    <div class="col-6"><img src="../../icon/graduated.png" alt=" rollno"
+                                            class="img-icon"> Roll No. :-</div>
+                                    <div class="col-6"> <span class="stddata" id="stdrollno">01</span></div>
 
-
-                    <div class="col-lg-4 col-12 my_center_box">
-                        <img src="https://cdn2.vectorstock.com/i/1000x1000/06/96/logo-school-vector-19170696.jpg"
-                        width="100" class="img-fluid rounded" alt="school logo" />
-                    </div>
-                    <div class="col-lg-8 col-12 my_center_box" style="align-items: normal;">
-                        <h4 class="title mt-2">School Name</h4>
-                    </div>
-                </div>
-                 
-                    <span class="dis">Description given by school or slogan of school</span>
-
-
-                    <div class="card-container   hide" id="studentDetails">
-                        <div class="card shadow  p-4 m-4 ">
-                            <div class="card-body">
-                                <div class="card-title studentCard my_center_box row">
-                                    <div class="col-6 col-md-4  col-lg-6 ">
-                                        <img src="../../icon/graduated.png" alt="student image" class="img-fluid" id="stdimage">
-                                    </div>
-                                    <h6 class="mt-2" id="stdname">Student Name</h6>
-                                    <h6 id="stdregno">78455</h6>
                                 </div>
-                                    <div class="row mt-2">
-                                        <div class="col-6"><img src="../../icon/graduated.png" alt=" rollno" class="img-icon"> Roll No. :-</div>
-                                        <div class="col-6"> <span class="stddata" id="stdrollno">01</span></div>
-                                      
-                                    </div>
-                                    
-                                    <div class="row mt-2">
-                                        <div class="col-6"><img src="../../icon/google-classroom.png" alt=" standard" class="img-icon"> Standard :-</div>
-                                        <div class="col-6"> <span id="stdstandard" class="stddata">10-B</span></div>
-                                    </div>
-                                    <div class="row mt-2">
-                                        <div class="col-6"><img src="../../icon/dad.png" alt="father" class="img-icon"/> Father Name :-</div>
-                                        <div class="col-6"><span id="stdfather" class="stddata">Mahadev</span></div>
-                                    </div>
-                                    <div class="row mt-2">
-                                        <div class="col-6"><img src="../../icon/telephone.png" alt="contact" class="img-icon"> Contact :-</div>
-                                        <div class="col-6"> <span id="stdcontact" class="stddata">9876543210</span></div>
-                                    </div>
+                                <div class="row mt-2">
+                                    <div class="col-6"><img src="../../icon/google-classroom.png" alt=" standard"
+                                            class="img-icon"> Standard :-</div>
+                                    <div class="col-6"> <span id="stdstandard" class="stddata">10-B</span></div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-6"><img src="../../icon/dad.png" alt="father" class="img-icon" />
+                                        Father Name :-</div>
+                                    <div class="col-6"><span id="stdfather" class="stddata">Mahadev</span></div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-6"><img src="../../icon/telephone.png" alt="contact"
+                                            class="img-icon"> Contact :-</div>
+                                    <div class="col-6"> <span id="stdcontact" class="stddata">9876543210</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -97,21 +99,24 @@
                             onclick="addStudentDetail()">Submit</button>
                     </div>
 
-                
+
 
                 </div>
                 <div class="col-lg-4 col-12">
-                    
-                    <div class="dropdown" data-trage="fee">
-                        <label for="fee"> Fee
-                        <select name="fee" id="fee" data-trage="fee">
-                            <option value="unpaid">Unpaid</option>
-                            <option value="paid"> Paid</option>
-                            <option valur="under-process">Uder Process</option>
-                        </select>
-                        </label>
+                    <div class="card-fees">
+                        <div class="feecard-container">
+                            <div class="dropdown" data-trage="fee">
+                                <label for="fee" class="Fees"> Fee
+                                    <select  class="fees" name="fee" id="fee" data-trage="fee">
+                                        <option value="unpaid">Unpaid</option>
+                                        <option value="paid"> Paid</option>
+                                        <option valur="under-process">Uder Process</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-4 col-12">ok</div>
             </div>

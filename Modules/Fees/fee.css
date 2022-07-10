@@ -1,6 +1,8 @@
 :root {
     --theme: #1183e1;
     --theme1: #5840ba;
+    
+
 }
 
 *{
@@ -10,7 +12,7 @@
 .root {
     height: 100vh;
     width: 100%;
-    background: var(--theme);
+    background:linear-gradient(#ff33cc,#884dff);
     overflow: hidden;
     padding: 16px;
 
@@ -61,6 +63,7 @@
     border: 0;
 border-radius: 24px;
 font-size: 12px;
+top: 100px;
 }
 .regNO{
     color: #111;
@@ -93,6 +96,9 @@ font-size: 12px;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+  .shadow{
+    box-shadow: 1px 1px 10px 1px black !important;
+  }
   .img-icon{
     height: 20px;
     width: 20px;
@@ -100,7 +106,7 @@ font-size: 12px;
 
 
 
-.card-container
+/* .card-container
 {    padding-top: 4rem;}
 
 .studentCard{
@@ -111,24 +117,83 @@ font-size: 12px;
 {
     padding-left: 0.5rem;
     font-weight: bold;
-}
+} */
 
 .hide{
     display: none;
 }
-/* .card-container{
-    height: 395px;
-    width: 450px;
+.card-container1{
+    height: 550px;
     background-color: #fff;
     border-radius: 16px;
-    position: absolute;
+    margin-top: 50px;
     overflow: hidden;
     box-shadow: 0px 1px 10px 1px #000;
-    top: 200px;
-    left: 60px;
-} */
+    
+    left: 100px;
+    
+} 
 
-/* .uper-container{
+ .uper-container{
     height:200px;
     background: linear-gradient(-45deg , #ff33cc,#884dff);
+}
+.image-container{
+    background: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    transform: translate(190px,120px);
+}
+.image-container img{
+    background: white;
+    width: 150px;
+    height: 151px;
+    border-radius: 50%;
+}
+.stdimg{
+    width: 100px;
+}
+.lower-container{
+    height: 418px;
+    background: white;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+.stdnameregno{
+    margin: 45px;
+}
+.stdname{
+    font-size: 25px;
+}
+.cardbody{
+    font-size: 20px;
+}
+.fees{
+    border-radius: 22px;
+    box-shadow: 1px 1px 2px  black;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    width: auto;
+}
+.Fees{
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(182, 182, 255);
+}
+/* .feecard-container{
+    font-size: 28px;
+    box-sizing: border-box;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 24px;
+    box-shadow: 1px 1px 10px black;
 } */
+.logo-container{
+    display: flex;
+}

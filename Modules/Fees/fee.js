@@ -42,12 +42,17 @@ const addStudentDetail = ()=>{
     // });
 
     //get data first then 
-    $('#studentFind').hide();
     
-    $('#studentDetails').show();
+    $('#studentFind').hide();
+       
+        $('#studentDetails').show();
+    
+    
+        
+    
 
-
-
+    
+    
 }
 
 var stdDetail=[
