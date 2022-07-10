@@ -116,3 +116,19 @@ font-size: 12px;
 .hide{
     display: none;
 }
+/* .card-container{
+    height: 395px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 16px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px 1px #000;
+    top: 200px;
+    left: 60px;
+} */
+
+/* .uper-container{
+    height:200px;
+    background: linear-gradient(-45deg , #ff33cc,#884dff);
+} */
