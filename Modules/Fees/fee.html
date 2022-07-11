@@ -37,19 +37,19 @@
         <div class="main">
             <div class="row ">
                 <div class="logo-container">
-                <div class=" my_center_box">
-                    <img src="https://cdn2.vectorstock.com/i/1000x1000/06/96/logo-school-vector-19170696.jpg"
-                        width="100" class="img-fluid rounded" alt="school logo" />
-                </div>
-                <div class="col-lg-8 col-12 my_center_box" style="align-items: normal;">
-                    <h4 class="title mt-2">School Name</h4>
-                    <span class="dis">Description given by school or slogan of school</span>
-                </div>
+                    <div class=" my_center_box">
+                        <img src="https://cdn2.vectorstock.com/i/1000x1000/06/96/logo-school-vector-19170696.jpg"
+                            width="100" class="img-fluid rounded" alt="school logo" />
+                    </div>
+                    <div class="col-lg-8 col-12 my_center_box" style="align-items: normal;">
+                        <h4 class="title mt-2">School Name</h4>
+                        <span class="dis">Description given by school or slogan of school</span>
+                    </div>
                 </div>
             </div>
             <div class="row h-100">
                 <div class="col-lg-4 col-12 h-100 scrollVertical ">
-                    <div class="card-container1 hide" id="studentDetails">
+                    <div class="card-container1 hide " id="studentDetails">
                         <div class="uper-container">
                             <div class="image-container">
                                 <img src="../../icon/graduated.png" alt="student image" class="stdimg">
@@ -103,16 +103,25 @@
 
                 </div>
                 <div class="col-lg-4 col-12">
-                    <div class="card-fees">
+                    <div class="card-fees" id="studentfees">
                         <div class="feecard-container">
                             <div class="dropdown" data-trage="fee">
                                 <label for="fee" class="Fees"> Fee
                                     <select  class="fees" name="fee" id="fee" data-trage="fee">
-                                        <option value="unpaid">Unpaid</option>
-                                        <option value="paid"> Paid</option>
-                                        <option valur="under-process">Uder Process</option>
+                                        <option value="unpaid" data-trage="uppaid"><a href=""> Unpaid</a></option>
+                                        <option value="paid"><a href="#paid1" data-t="collapse"> Paid</a></option>
+                                        <option valur="under-process" data-trage="under-process">Uder Process</option>
                                     </select>
                                 </label>
+                            </div>
+
+                            <div class="collapse" id="paid1" data-trage="paid1">
+
+                                <div class="paid-container">
+                                    <h4>fee</h4>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>

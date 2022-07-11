@@ -46,6 +46,7 @@ const addStudentDetail = ()=>{
     $('#studentFind').hide();
        
         $('#studentDetails').show();
+        $('#studentfees').show();
     
     
         

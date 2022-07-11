@@ -123,10 +123,10 @@ top: 100px;
     display: none;
 }
 .card-container1{
-    height: 550px;
+    height: 542px;
     background-color: #fff;
     border-radius: 16px;
-    margin-top: 50px;
+    margin-top: 40px;
     overflow: hidden;
     box-shadow: 0px 1px 10px 1px #000;
     
@@ -158,8 +158,8 @@ top: 100px;
 .lower-container{
     height: 418px;
     background: white;
-    padding: 20px;
-    padding-top: 40px;
+    
+    padding-top: 24px;
     text-align: center;
 }
 .stdnameregno{
@@ -169,22 +169,25 @@ top: 100px;
     font-size: 25px;
 }
 .cardbody{
-    font-size: 20px;
+    font-size: 15px;
+}
+.card-fees{
+    display: none;
 }
 .fees{
     border-radius: 22px;
     box-shadow: 1px 1px 2px  black;
     text-align: center;
-    width: 300px;
+    width: 227px;
     height: 50px;
-    width: auto;
+    
 }
 .Fees{
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bolder;
-    color: rgb(182, 182, 255);
+    color: rgb(0, 0, 12);
 }
-/* .feecard-container{
+.feecard-container{
     font-size: 28px;
     box-sizing: border-box;
     border: 1px solid;
@@ -193,7 +196,7 @@ top: 100px;
     margin: 10px;
     border-radius: 24px;
     box-shadow: 1px 1px 10px black;
-} */
+}
 .logo-container{
     display: flex;
 }
