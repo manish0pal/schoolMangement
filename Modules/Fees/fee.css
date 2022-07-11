@@ -158,9 +158,7 @@ top: 100px;
 .lower-container{
     height: 418px;
     background: white;
-    
     padding-top: 24px;
-    text-align: center;
 }
 .stdnameregno{
     margin: 45px;
@@ -181,6 +179,9 @@ top: 100px;
     width: 227px;
     height: 50px;
     
+}
+.margin1{
+    max-width: 46%;
 }
 .Fees{
     font-size: 20px;
