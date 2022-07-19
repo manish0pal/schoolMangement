@@ -122,28 +122,32 @@
                                         <h6 class="mt-2">Fees</h6>
                                     </div>
                                     <div class="col-4" id="colorChange">
-                                        <select class="mdb-select md-form float-right mt-2" id="change"
-                                            style="background-color: lightgray;" onclick="feeDropChange()">
+                                        <select class="dropDown  float-right mt-2" id="feedropdown"
+                                             onchange="feeDropChange()">
 
-                                            <option value="1" id="unpaid">Unpaid</option>
-                                            <option value="2" id="paid" >Paid</option>
-                                            <option value="3" id="underProcess">Under Process</option>
+                                            <option value="unpaid" >Unpaid</option>
+                                            <option value="paid"  >Paid</option>
+                                            <option value="underProcess" >Under Process</option>
                                         </select>
                                     </div>
                                 </div>
 
-                                <div class="row">
-
-                                    <div class="card col-12 rounded p-1 mt-2 feeCard paid">
+                                <div class="row" id="feeRow">
+                                    <div class="card col-12 rounded p-1 mt-4 feeCard unpaid">
                                         <div class="row">
-                                            <div class="col-7">ok</div>
-                                            <div class="col-5 my_center_box">
-                                                <h4>₹ 7420</h4>
-                                            </div>
-
+                                        <div class="col-6 p-2 ml-1"><h6>rahul</h6>
+                                            <h6>25/05/2002</h6>
+                                            <h6>unpaid</h6>
                                         </div>
-
+                                        <div class="col-4 my_center_box">
+                                            <h4>₹ 230</h4>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="btn btn-primary float-right" > Slect To Pay</div>
+                                        </div>
                                     </div>
+                                    </div>
+                                  
                                 </div>
                             </div>
                         </div>
