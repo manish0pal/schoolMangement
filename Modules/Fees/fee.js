@@ -54,7 +54,9 @@ const studentDetail =
 const addStudentDetail = () => {
   
     //get data first then 
+    
     $('#studentFind').hide();
+<<<<<<< HEAD
 
     $('#studentDetails').show();
 }
@@ -64,6 +66,19 @@ const addStudentDetail = () => {
 const feeDropChange = () =>{
    let selectId =  $('#feedropdown').val();
    $('#feeRow').empty();
+=======
+       
+        $('#studentDetails').show();
+        $('#studentfees').show();
+    
+    
+        
+    
+
+    
+    
+}
+>>>>>>> 779eb3f504902a5001f9aab4ab2b672bc4e7fbe2
 
    studentDetail.feeDtl.map((val,ind)=>{
     if(val.status == selectId){

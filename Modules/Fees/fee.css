@@ -1,6 +1,8 @@
 :root {
     --theme: #1183e1;
     --theme1: #5840ba;
+    
+
 }
 
 *{
@@ -10,7 +12,7 @@
 .root {
     height: 100vh;
     width: 100%;
-    background: var(--theme);
+    background:linear-gradient(#ff33cc,#884dff);
     overflow: hidden;
     padding: 16px;    
 }
@@ -59,6 +61,7 @@
     border: 0;
 border-radius: 24px;
 font-size: 12px;
+top: 100px;
 }
 .regNO{
     color: #111;
@@ -91,6 +94,9 @@ font-size: 12px;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+  .shadow{
+    box-shadow: 1px 1px 10px 1px black !important;
+  }
   .img-icon{
     height: 20px;
     width: 20px;
@@ -105,7 +111,7 @@ font-size: 12px;
 {
     padding-left: 0.5rem;
     font-weight: bold;
-}
+} */
 
 .hide{
     display: none;
