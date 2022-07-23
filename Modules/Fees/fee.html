@@ -24,21 +24,21 @@
             <div class="logo mt-2 mb-2">
                 <img class="img-fluid" src="../../logocrop.png" width="60" />
             </div>
-            <div class="menu_item  mt-2 mb-2">
-                <i class="fa fa-money "></i>
-            </div>
-
-            <div class="menu_item last_menu   mb-2">
+            <div class="menu_item last_menu my_center_box mb-2">
                 <i class="fa fa-sign-out"></i>
             </div>
 
+     <!-- <div class="menu_item  mt-2 mb-2">
+                <i class="fa fa-money "></i>
+            </div> -->
 
 
         </div>
-        <div class="main">
+        <!-- add scroll in mobile view -->
+        <div class="main scrollVertical ">
 
-            <div class="row h-100 pt-2 scrollVertical">
-                <div class="col-12 d-flex justify-content-center" style="margin-top: -24px;">
+            <div class="row  shrink">
+                <div class="col-12 d-flex justify-content-center">
                     <img src="../../icon/logo-school.jpg" width="100" class="img-fluid rounded" alt="school logo" />
                     <div class=" my_center_box">
                         <h4 class="title mt-2">School Name</h4>
@@ -48,7 +48,9 @@
 
 
                 </div>
-                <div class="col-lg-4 col-12 h-100 scrollVertical ">
+            </div>
+            <div class="row grow ">
+                <div class="col-lg-4 col-12  scrollVertical ">
                     <div class="card shadow rounded  m-4 p-4" id="studentFind">
                         <span class="mt-2">Enter Registration No.</span>
                         <div class="form_group borderBlue">
@@ -58,7 +60,9 @@
                         <!-- end -->
 
                         <button class="col-lg-5 col-md-6 col-8 btn btn-success btn-sm mt-4 regBtn"
-                            onclick="addStudentDetail()">Submit</button>
+                            onclick="addStudentDetail()"><i class=" loader fa fa-spinner fa-spin hide "
+                                id="btnloader"></i> Submit</button>
+                        <span class="error mt-2" id="errorMsg"></span>
                     </div>
 
                     <div class="card-container hide   " id="studentDetails">
@@ -76,8 +80,6 @@
                                             <h6 id="stdregno">78455</h6>
                                         </div>
                                     </div>
-
-
                                 </div>
                                 <div class="row mt-2">
                                     <div class="col-6"><img src="../../icon/graduated.png" alt=" rollno"
@@ -104,50 +106,30 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
-                <div class="col-lg-4 col-12   h-100 scrollVertical ">
+                <div class="col-lg-4 col-12   scrollVertical ">
 
-                    <div class="card-container">
+                    <div class="card-container hide" id="feeSection">
                         <div class="card shadow rounded p-1 m-2">
                             <div class="card-body ">
 
                                 <div class="row">
                                     <div class="col-8">
-                                        <h6 class="mt-2">Fees</h6>
+                                        <h6 class="mt-2">Payments</h6>
                                     </div>
                                     <div class="col-4" id="colorChange">
                                         <select class="dropDown  float-right mt-2" id="feedropdown"
-                                             onchange="feeDropChange()">
-
-                                            <option value="unpaid" >Unpaid</option>
-                                            <option value="paid"  >Paid</option>
-                                            <option value="underProcess" >Under Process</option>
+                                            onchange="feeDropChange()">
+                                            <option value="all">All</option>
+                                            <option value="unpaid" selected>Unpaid</option>
+                                            <option value="paid">Paid</option>
+                                            <option value="underProcess">Under Process</option>
                                         </select>
                                     </div>
                                 </div>
 
                                 <div class="row" id="feeRow">
-                                    <div class="card col-12 rounded p-1 mt-4 feeCard unpaid">
-                                        <div class="row">
-                                        <div class="col-6 p-2 ml-1"><h6>rahul</h6>
-                                            <h6>25/05/2002</h6>
-                                            <h6>unpaid</h6>
-                                        </div>
-                                        <div class="col-4 my_center_box">
-                                            <h4>₹ 230</h4>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="btn btn-primary float-right" > Slect To Pay</div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                  
+
                                 </div>
                             </div>
                         </div>
@@ -156,12 +138,24 @@
 
 
                 <div class="col-lg-4 col-12">
-                   
-                     
+                    <div class="hide" id="lastSection">
 
+                  
+                    <div class="my_center_box m-2">
+                        <span class="dis">Total  Amount</span>
+                            <span id="tltAmt" style="font-size:2rem ;"> ₹ 0</span>
+                    </div>
+                    <div class="my_center_box mt-2">
+                        <button class="btn btn-primary" style="font-size: 12px; font-weight:bold">Click to Pay</button>
+                        <span class="error mt-2 f-10" id="errorMsgPayment"></span>
+                    </div>
                 </div>
             </div>
+
+
+            </div>
         </div>
+    </div>
     </div>
 </body>
 <script src="./fee.js"></script>
