@@ -13,45 +13,45 @@ const studentDetail =
     feeDtl: [
         {
             id: 1,
-            feeHeadName: "March Fee",
-            date: '20/02/2022',
-            status: 'unpaid',
-            payAmount: 230
+            feeHeadName: "January Fee",
+            date: '01/01.2022',
+            status: 'paid',
+            payAmount: 1200
         },
         {
             id: 2,
-            feeHeadName: "March Fee",
-            date: '20/02/2022',
+            feeHeadName: "February Fee",
+            date: '01/02/2022',
             status: 'paid',
-            payAmount: 230
+            payAmount: 1200
         },
         {
             id: 3,
             feeHeadName: "March Fee",
             date: '20/02/2022',
-            status: 'underProcess',
-            payAmount: 230
+            status: 'paid',
+            payAmount: 1200
         },
         {
             id: 4,
             feeHeadName: "Exam",
             date: '20/02/2022',
-            status: 'unpaid',
-            payAmount: 230
+            status: 'underProcess',
+            payAmount: 300
         },
         {
             id: 5,
-            feeHeadName: "March Fee",
+            feeHeadName: "April Fee",
             date: '20/02/2022',
-            status: 'paid',
-            payAmount: 230
+            status: 'unpaid',
+            payAmount: 1200
         },
         {
             id: 6,
-            feeHeadName: "March Fee",
+            feeHeadName: "May Fee",
             date: '20/02/2022',
-            status: 'underProcess',
-            payAmount: 230
+            status: 'unpaid',
+            payAmount: 1200
         }
     ]
 }
@@ -61,6 +61,11 @@ let selectedFeeCard = [];
 const addStudentDetail = () => {
 
     //get data first then 
+    let regNo=$('#regno').val();
+    if(regNo == ""){
+        $('#regNoerrorMsg').text('Please Enter Register Number');
+        return;
+    }
 
     $('#studentFind').hide();
 

@@ -54,7 +54,7 @@
                     <div class="card shadow rounded  m-4 p-4" id="studentFind">
                         <span class="mt-2">Enter Registration No.</span>
                         <div class="form_group borderBlue">
-                            <input type="text" class="form_input regNO" id="name" placeholder="Registraion Number"
+                            <input type="text" class="form_input regNO" id="regno" placeholder="Registraion Number"
                                 required="" />
                         </div>
                         <!-- end -->
@@ -62,7 +62,7 @@
                         <button class="col-lg-5 col-md-6 col-8 btn btn-success btn-sm mt-4 regBtn"
                             onclick="addStudentDetail()"><i class=" loader fa fa-spinner fa-spin hide "
                                 id="btnloader"></i> Submit</button>
-                        <span class="error mt-2" id="errorMsg"></span>
+                        <span class="error mt-2" id="regNoerrorMsg"></span>
                     </div>
 
                     <div class="card-container hide   " id="studentDetails">
@@ -158,6 +158,8 @@
     </div>
     </div>
 </body>
+<script src="./fakeapi.js"></script>
 <script src="./fee.js"></script>
+
 
 </html>
